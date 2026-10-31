@@ -4,7 +4,7 @@ lmdb==0.94
 tensorboardX==1.2
 tensorflow==2.11.1
 tensorpack==0.9.4
-tqdm==4.31.1
+tqdm==4.66.3
 easydict==1.9
 PyYAML==5.4
 jsonlines==1.2.0

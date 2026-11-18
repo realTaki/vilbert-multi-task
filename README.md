@@ -24,7 +24,13 @@ and [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Visi
 }
 ```
 
-## Repository Setup
+## Graphcore IPU Setup
+
+This branch retains the Poplar SDK and PopTorch-specific training paths.
+Follow the [IPU setup guide](step_by_step_guide_IPU.md) for the historical SDK
+environment. Install the matching TensorFlow, PyTorch, and PopTorch wheels
+provided by that SDK rather than mixing in generic distribution wheels.
+
 
 1. Create a fresh conda environment, and install all dependencies.
 

@@ -51,8 +51,8 @@ conda activate vilbert-mt
 
 select a dir as your workspace for this project
 ```
-git clone https://github.com/KAndHisC/vilbert-multi-task.git
-git checkout IPU
+git clone --branch IPU --recursive https://github.com/realTaki/vilbert-multi-task.git
+cd vilbert-multi-task
 
 # install libcap-dev. Example in ubuntu is following.
 apt-get install build-essential libcap-dev

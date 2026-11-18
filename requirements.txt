@@ -1,6 +1,7 @@
 transformers
+pytorch-transformers==1.0.0
 numpy
-lmdb==0.94
+lmdb==1.4.1
 tensorboardX==1.8
 tensorpack==0.9.4
 tqdm==4.31.1

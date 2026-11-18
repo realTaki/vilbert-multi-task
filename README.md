@@ -26,22 +26,22 @@ and [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Visi
 
 ## Repository Setup
 
-1. Create a fresh conda environment, and install all dependencies.
+1. Create a Python 3.10 environment and clone the repository and its submodule.
 
 ```text
-conda create -n vilbert-mt python=3.6
+conda create -n vilbert-mt python=3.10
 conda activate vilbert-mt
-git clone --recursive https://github.com/facebookresearch/vilbert-multi-task.git
+git clone --recursive https://github.com/realTaki/vilbert-multi-task.git
 cd vilbert-multi-task
-pip install -r requirements.txt
 ```
 
-2. Install pytorch
+2. Install PyTorch and torchvision for your platform using the [PyTorch installation guide](https://pytorch.org/get-started/locally/), and install the remaining dependencies. On Debian or Ubuntu, install a C toolchain and `libcap-dev` before building `python-prctl`.
+
 ```
-conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
+python -m pip install -r requirements.txt
 ```
 
-3. Install apex, follows https://github.com/NVIDIA/apex
+3. Install [NVIDIA Apex](https://github.com/NVIDIA/apex) only if you need the legacy distributed or mixed-precision training paths that import it.
 
 4. Install this codebase as a package in this environment.
 ```text

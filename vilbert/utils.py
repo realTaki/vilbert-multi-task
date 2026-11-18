@@ -25,7 +25,8 @@ from time import gmtime, strftime
 from bisect import bisect
 from torch import nn
 import torch
-from torch._six import inf
+from math import inf
+from vilbert import TF_WEIGHTS_NAME, WEIGHTS_NAME
 
 import pdb
 

@@ -22,7 +22,7 @@ from torch import nn
 import torch.nn.functional as F
 from torch.nn import CrossEntropyLoss
 from vilbert.utils import cached_path
-from transformers.models.bert.modeling_bert import BertConfig
+from transformers import BertConfig
 import pdb
 from torch.nn.utils.weight_norm import weight_norm
 

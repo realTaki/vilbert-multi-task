@@ -45,8 +45,8 @@ def main():
         help="",
     )
     args = parser.parse_args()
-    with open('vlbert_tasks.yml', 'r') as f:
-        task_cfg = edict(yaml.load(f))
+    with open('vilbert_tasks.yml', 'r') as f:
+        task_cfg = edict(yaml.safe_load(f))
 
     # 1: find the file where input file is correct while target file is wrong
     # 2: get the image id and image path.
